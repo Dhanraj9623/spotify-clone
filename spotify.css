@@ -11,7 +11,7 @@ body{
 .container{
     display: flex;
     color: #f0f8ff;
-    margin-top:none;
+    margin-top:1px;
 }
 .left{
     width: 340px;
