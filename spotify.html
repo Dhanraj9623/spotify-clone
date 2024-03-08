@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script>
+        const one = document.getElementById('one');
+        const right = document.getElementById('right');
+
+        one.addEventListener('mouseover', function() {
+            right.style.backgroundColor = 'red';
+        });
+
+        one.addEventListener('mouseout', function() {
+            right.style.background = 'white';
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top-left">
+                <h2><span class="material-symbols-outlined">
+                    home
+                    </span>Home</h2>
+                <h2><span class="material-symbols-outlined">
+                    search
+                    </span>Search</h2>
+
+            </div>
+            <div class="bottom-left">
+                <div class="bottom-left-heading">
+                    <h4><span class="material-symbols-outlined">stacks</span>Your Library</h4>
+                    <button>Playlists</button>
+                    <button>Albums</button>
+                    <button>Podcasts & Shows</button>
+                </div>
+                <!---------------------------------------- -->
+                <div style="display: flex;">
+                    <div class="container">
+                        <input checked="" class="checkbox" type="checkbox"> 
+                        <div class="mainbox">
+                            <div class="iconContainer">
+                                <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="search_icon"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                            </div>
+                        <input class="search_input" placeholder="search" type="text">
+                        </div>
+                    </div>
+                    <div style="margin-left: auto;margin-top:20px;">
+                        <a href="" style="color: #949191;text-decoration:none;" onmouseover="this.style.textDecoration='underline',this.style.color='white'" onmouseout="this.style.textDecoration='none',this.style.color='#949191'">Recents  </a>
+                    </div>
+                    
+                </div>
+                <!-- ----------------------------------------- -->
+                <div class="scroll-playlist">
+                    <div class="playlists">
+                        <img src="onRepeat.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>On Repeat</h4>
+                            <p>Playlist . Dhanraj</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="tophits2017.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Top Hits 2017</h4>
+                            <p>Playlist . Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="megahitmix.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Mega Hit Mix</h4>
+                            <p>Playlist . Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="katebush.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>This is Kate Bush</h4>
+                            <p>Playlist . Kate Bush</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="shapeofyou.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Shape Of You</h4>
+                            <p>Playlist . Ed Sheeran</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="snowman.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Snowman</h4>
+                            <p>Playlist . Dhanraj</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="workout.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Workout</h4>
+                            <p>Playlist . Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="postmalone.jpeg" alt="">
+                        <div class="text-container">
+                            <h4>Rani</h4>
+                            <p>Playlist . Postmalone</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="liked.jpg" alt="">
+                        <div class="text-container">
+                            <h4>Liked Songs</h4>
+                            <p>Playlist . Dhanraj</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="liked.jpg" alt="">
+                        <div class="text-container">
+                            <h4>Liked Songs</h4>
+                            <p>Playlist . Dhanraj</p>
+                        </div>
+                    </div>
+                    <div class="playlists">
+                        <img src="liked.jpg" alt="">
+                        <div class="text-container">
+                            <h4>Liked Songs</h4>
+                            <p>Playlist . Dhanraj</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right" id="right">
+            <div class="input-container">
+                <div class="nav">
+                    <div class="circle">
+                        
+                        <span class="material-symbols-outlined">
+                            arrow_back_ios
+                            </span>
+                    </div>
+                    <div class="circle2">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                            </span>
+                    </div>
+                    
+                </div>
+                
+
+                <label for="search-bar" class="search-icon">
+                    <span class="material-symbols-outlined">search</span>
+                </label>
+                <input id="search-bar" type="text" placeholder="What do you want to play?">
+                <button id="premium">Explore Premium</button>
+                <button id="install">Install App</button>
+            </div>
+            <h1>Good Afternoon</h1>
+            <div class="grid-container">
+                <div class="item" id="one">
+                    <img src="onRepeat.jpeg" alt="">
+                    <div class="itemRight">
+                        <p>On Repeat</p>
+                        
+                    </div>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+                <div class="item" id="two">
+                    <img src="tophits2017.jpeg" alt="">
+                    <p>Liked Songs</p>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+                <div class="item" id="three">
+                    <img src="megahitmix.jpeg" alt="">
+                    <p>Radio</p>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+                <div class="item"  id="four">
+                    <img src="katebush.jpeg" alt="">
+                    <p>This is Kate Bush</p>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+                <div class="item"  id="five">
+                    <img src="snowman.jpeg" alt="">
+                    <p>Random</p>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+                <div class="item"  id="six">
+                    <img src="allout2020.jpeg" alt="">
+                    <p>Top Hits of 2017</p>
+                    <button class="play-button">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="cards-heading">
+                    <a href="">Today's Biggest Hits</a>
+                    <a href="">Show all</a>
+                </div>
+                <div class="actual-cards">
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="megahitmix.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="weekend.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="ritviz.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="postmalone.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-heading">
+                    <a href="">Today's Biggest Hits</a>
+                    <a href="">Show all</a>
+                </div>
+                <div class="actual-cards">
+                    <div class="card">
+                        <img src="workout.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="megahitmix.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="katebush.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="weekend.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-heading">
+                    <a href="">Today's Biggest Hits</a>
+                    <a href="">Show all</a>w
+                </div>
+                <div class="actual-cards">
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="popShotws.jpeg" alt="">
+                        <button class="play-button1">
+                            <span class="play-icon1">▶</span>
+                        </button>
+                        <div class="description">
+                            <h3>Pop Shots</h3>
+                            <p>All you pop favourite:by Cardi B</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+        </div>
+        <div class="playbar">
+            <div class="playbar-left">
+                <div class="current">
+                    <img src="freaks.jpeg" alt="">
+                    <div class="info-container">
+                        <h4>Freaks</h4>
+                        <p>Surf Cruse</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playbar-mid">
+                <div class="playbar-mid-top">
+                    <span class="material-symbols-outlined">
+                        shuffle
+                        </span>
+                    <span class="material-symbols-rounded">
+                        skip_previous
+                        </span>
+                    <span class="material-symbols-outlined">
+                        play_circle
+                        </span>
+                    <span class="material-symbols-rounded">
+                        skip_next
+                        </span>
+                    <span class="material-symbols-outlined">
+                        repeat
+                        </span>
+                </div>
+                <div class="playbar-mid-bottom">
+                    
+                    <p>0:40</p>
+                    <div class="progress-bar-main">
+                        <div class="progress-main">
+    
+                        </div>
+                    </div>
+                    <p>2:30</p>
+                </div>
+            </div>
+            <div class="playbar-right">
+                <span class="material-symbols-outlined">
+                    slideshow
+                </span>
+                <span class="material-symbols-outlined">
+                    queue_music
+                </span>
+                <span class="material-symbols-rounded">
+                    devices
+                </span>
+                <span class="material-symbols-outlined">
+                    volume_up
+                </span>
+                <div class="progress-bar">
+                    <div class="progress">
+
+                    </div>
+                </div>
+                <span class="material-symbols-rounded">
+                    picture_in_picture_alt
+                </span>
+                <span class="material-symbols-outlined">
+                    open_in_full
+                </span>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
